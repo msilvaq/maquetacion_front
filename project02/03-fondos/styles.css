@@ -1,0 +1,33 @@
+body{
+    /*    
+    background-image: url(fondos/patron3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: right bottom;
+    */
+    background-color:#ccc;
+    color: black;
+    text-align: justify;
+    text-indent: 15px;
+    /*word-spacing: 10px;
+    letter-spacing: 5px;*/
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(94, 131, 212);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    vertical-align: top;
+}
+h2{
+    color: red;
+    background: white;
+    border: 5px solid red;
+}

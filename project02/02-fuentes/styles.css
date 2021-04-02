@@ -1,0 +1,36 @@
+@font-face{
+    font-family: ShadowsIntoLight;
+    src: url(font/ShadowsIntoLight-Regular.ttf);
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-family: 'Stick', sans-serif;
+    font-size: 45px;
+    /*colores*/
+/*colores del sistema*/
+    color: mediumpurple;
+/*colores hexadecimales*/
+    color: #ffff;
+/*colores RGB*/
+    
+/*colores RGBA*/
+    color: rgba(189, 34, 34, 0.933);
+   
+}
+
+h3{
+    font-family: ShadowsIntoLight,"Comic Sans MS";
+    font-size: 35px;
+    font-weight: lighter;
+    color: olive;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
