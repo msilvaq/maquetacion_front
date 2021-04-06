@@ -215,6 +215,90 @@
                         </div>
                     </div>
                 </div>
+
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Button with data-bs-target
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+
+                <!-- barra progreso -->
+                <div class="progress mt-5">
+                    <div id="barra-progreso" class="progress-bar bg-success w-0" role="progressbar">
+                        0%
+                    </div>
+                </div>
+                <script>
+                    var contador = 0
+                    setInterval(function () {
+                        if (contador < 100) {
+                            contador++
+                            var barra = document.querySelector("#barra-progreso");
+                            barra.style.width = contador + "%";
+                            barra.innerHTML = contador + "%";
+                        }
+                    }, 1000);
+                </script>
+                <!-- fin barra progreso -->
+
+                <!-- TOOLTIP -->
+                <button type="button" class="btn-tool btn btn-danger mt-3" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Si das click salgo!!!">
+                    Click!!
+                </button>
+                <!-- FIN TOOLTIP -->
+
+                <!-- POPOVERS -->
+                <button type="button" class="btn-pop btn btn-lg btn-success mt-3" data-bs-toggle="popover"
+                    title="habla!!!!" data-bs-content="Habla este csm jajajajjaajja?">Click aquí</button>
+                <!-- FIN POPOVERS -->
+
+                <hr />
+                <form>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-preprend">
+                                <span class="input-group-text rounded-0">Nombre</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ingresa un nombre">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Genero</label>
+                        <select class="form-select">
+                            <option value="H">Hombre</option>
+                            <option value="M">Mujer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Ingresa un email">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Ingresa un password">
+                    </div>
+
+
+                    <input type="submit" class="btn btn-success mt-2" value="Enviar" />
+
+                </form>
+
             </div>
 
             <div class="row">
@@ -232,11 +316,7 @@
                     </ul>
                 </nav>
                 <!-- fin paginacion -->
-
             </div>
-
-
-
 
 
             <!-- FIN ALERTAS -->
@@ -294,16 +374,24 @@
                     </div>
                 </div>
                 <!-- fin Jumbotron -->
+
+
+
             </div>
         </div>
         <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="jquery/popper.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
         <script>
             $(document).ready(function () {
                 $(".carousel").carousel({
                     interval: 3000
                 });
+                $(".btn-tool").tooltip();
+                $(".btn-pop").popover();
             });
+
+
         </script>
 </body>
 
